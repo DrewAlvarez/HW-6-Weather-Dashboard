@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <div class="card text-black bg-info mb-3">
+        <h1 class="card-header">
+            Weather Dashboard
+        </h1>
+        <div class="card-body row">
+            <div class="col-3" id="searchArea">
+                <h5>Seach for a City:</h5>
+                <input class="form-control" id="citySearch">
+                <button type="button" class="btn btn-secondary btn-sm">Search</button>
+                <br>
+                <div class="btn-group-vertical cityHistory" role="group" aria-label="First group">
+
+                </div>
+            </div>
+            <div class="col-9" id="resentCityDay">
+                <h5>Welcome to the Weather Dashboard</h5>
+                <p>Feel free to search a City which you would like to know the weather forcast. The current day's forcast will be presented here, and a further 5 day forcast below. Search history for up to 6 cities will be saved to the left.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
