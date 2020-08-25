@@ -8,11 +8,11 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <div class="card text-black bg-info mb-3">
-        <h1 class="card-header">
-            Weather Dashboard
-        </h1>
-        <div class="card-body row">
+    <div class="container">
+        <div class="row justify-content-center header-title">
+            <h1>Weather Dashboard</h1>
+        </div>
+        <div class="row">
             <div class="col-3" id="searchArea">
                 <h5>Seach for a City:</h5>
                 <input class="form-control" id="citySearch">
@@ -23,8 +23,14 @@
                 </div>
             </div>
             <div class="col-9" id="resentCityDay">
-                <h5>Welcome to the Weather Dashboard</h5>
-                <p>Feel free to search a City which you would like to know the weather forcast. The current day's forcast will be presented here, and a further 5 day forcast below. Search history for up to 6 cities will be saved to the left.</p>
+                <div>
+                    <h5>Welcome to the Weather Dashboard</h5>
+                    <p>Feel free to search a City which you would like to know the weather forecast. The current day's forecast will be presented here, and a further 5 day forecast below. Search history for up to 6 cities will be saved to the left.</p>
+                </div>
+                <div id="fiveDay">
+                    <h5>5-day Forecast:</h5>
+
+                </div>
             </div>
         </div>
     </div>
