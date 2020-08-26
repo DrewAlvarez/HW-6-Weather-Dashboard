@@ -13,7 +13,6 @@ searchBtn.on("click", function(){
         url: queryUrl,
         method: "GET"
     }).then(function(response){
-        console.log(response)
         var cityLat = response.coord.lat;
         var cityLon = response.coord.lon;
         var uvUrl = "http://api.openweathermap.org/data/2.5/uvi?appid=e38ce3347beb048675316478b3f3b0c5&lat=" + cityLat + "&lon=" + cityLon;
@@ -22,7 +21,6 @@ searchBtn.on("click", function(){
             url: uvUrl,
             method: "GET"
         }).then(function(uvResponse){
-            console.log(uvResponse)
             var weatherImg = $("#weatherImg")
             weatherImg.attr("src", "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
             currentCity.text(city+" (" + moment().format('L') + ")")

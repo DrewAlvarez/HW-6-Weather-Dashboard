@@ -47,17 +47,21 @@
 .uvSevere{
     background-color: red;
     width: 125px;
+    border-radius: 3px;
 }
 
 .uvModerate{
     background-color: orange;
     width: 125px;
+    border-radius: 3px;
 }
 .uvFavorable{
     background-color: yellow;
     width: 125px;
+    border-radius: 3px;
 }
 .uvLow{
     background-color: green;
     width: 125px;
+    border-radius: 3px;
 }
