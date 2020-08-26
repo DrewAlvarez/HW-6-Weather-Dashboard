@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -25,8 +26,12 @@
             </div>
             <div class="col-9" id="resentCityDay">
                 <div>
-                    <h5>Welcome to the Weather Dashboard</h5>
-                    <p>Feel free to search a City which you would like to know the weather forecast. The current day's forecast will be presented here, and a further 5 day forecast below. Search history for up to 6 cities will be saved to the left.</p>
+                    <h5 id="currentCity">Welcome to the Weather Dashboard</h5>
+                    <img id="weatherImg">
+                    <p id="currentTemp">Feel free to search a City which you would like to know the weather forecast. The current day's forecast will be presented here, and a further 5 day forecast below. Search history for up to 6 cities will be saved to the left.</p>
+                    <p id="currentHumid"></p>
+                    <p id="windSpeed"></p>
+                    <p id="uvIndex"></p>
                 </div>
                 <div id="fiveDay">
                     <h5>5-day Forecast:</h5>

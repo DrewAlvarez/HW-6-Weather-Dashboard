@@ -43,3 +43,21 @@
     margin-bottom: 20px;
     float: left;
 }
+
+.uvSevere{
+    background-color: red;
+    width: 125px;
+}
+
+.uvModerate{
+    background-color: orange;
+    width: 125px;
+}
+.uvFavorable{
+    background-color: yellow;
+    width: 125px;
+}
+.uvLow{
+    background-color: green;
+    width: 125px;
+}
