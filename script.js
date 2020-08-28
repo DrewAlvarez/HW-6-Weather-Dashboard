@@ -92,7 +92,7 @@ function weather(city){
                 var forecastTemp = $("<p>");
                 var forecastHumid = $("<p>");
                 forecastEl.attr("class", "forecast");
-                //forecastEl.attr("data-forecast", [i])
+                forecastIcon.attr("class", "iconBg")
 
                 forecastDate.text(moment().add(i+1, "days").format("l"));
                 forecastIcon.attr("src", "http://openweathermap.org/img/wn/" + forecastResponse.daily[i+1].weather[0].icon + ".png");

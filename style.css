@@ -1,7 +1,7 @@
 .container{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .header-title{
@@ -11,7 +11,8 @@
 }
 #searchArea{
     background-color: rgb(100, 189, 201);
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding-top: 5px;
 
 }
@@ -21,8 +22,9 @@
 }
 
 #resentCityDay{
-    background-color: rgb(100, 189, 201);
-    border-radius: 5px;
+    background-color: rgb(124, 199, 209);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding-top: 5px;
 }
 
@@ -43,6 +45,11 @@
     margin-bottom: 20px;
     padding: 8px;
     float: left;
+}
+
+.iconBg{
+    background-color: lightgray;
+    border-radius: 3px;
 }
 
 .uvSevere{
