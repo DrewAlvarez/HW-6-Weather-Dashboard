@@ -9,6 +9,16 @@ var newCities = [];
 //Render weather for previous session's last search
 weather(JSON.parse(localStorage.getItem("lastCity")))
 
+//Add enter key click event
+var formEnter = $("#citySearch")
+
+formEnter.on("keyup", function(event){
+    if (event.keyCode === 13){
+        event.preventDefault();
+        searchBtn.click();
+    }
+});
+
 //Render weather for current search
 searchBtn.on("click", function(){
     var city = $(this).siblings("input").val();
