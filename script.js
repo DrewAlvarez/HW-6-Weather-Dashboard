@@ -60,7 +60,7 @@ function weather(city){
     }).then(function(response){
         var cityLat = response.coord.lat;
         var cityLon = response.coord.lon;
-        var uvUrl = "http://api.openweathermap.org/data/2.5/uvi?appid=e38ce3347beb048675316478b3f3b0c5&lat=" + cityLat + "&lon=" + cityLon;
+        var uvUrl = "https://api.openweathermap.org/data/2.5/uvi?appid=e38ce3347beb048675316478b3f3b0c5&lat=" + cityLat + "&lon=" + cityLon;
         
         $.ajax({
             url: uvUrl,
